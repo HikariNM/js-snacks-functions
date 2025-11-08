@@ -11,16 +11,15 @@ const name = 'Mario';
 // Dichiara la funzione qui.
 function greetingsByTime(name){
     const hours = new Date().getHours();
-    const minutes = new Date().getMinutes()
-    console.log(`Sono le ${hours}:${minutes}`);
+    const minutes = new Date().getMinutes();
     if (hours > 5 && hours <= 13 ) {
-        return `Buongiorno ${name}`;
+        return `Buongiorno ${name}, sono le ${hours}:${minutes}`;
     } else if (hours > 13 && hours <= 17){
-        return `Buon pomeriggio ${name}`
+        return `Buon pomeriggio ${name}, sono le ${hours}:${minutes}`
     } else if (hours > 17 && hours <= 21){
-        return `Buonasera ${name}`;
+        return `Buonasera ${name}, sono le ${hours}:${minutes}`;
     } else {
-        return `Buonanotte ${name}`;
+        return `Buonanotte ${name}, sono le ${hours}:${minutes}`;
     }
     
 }
