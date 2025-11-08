@@ -5,7 +5,7 @@ const userName = 'Mario';
 
 // Dichiara la funzione qui.
 function greetings(name) {
-    return `Ciao ${userName}`
+    return `Ciao ${name}`
     
 }
 
