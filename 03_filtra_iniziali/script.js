@@ -12,7 +12,6 @@ function filterByInitials(array, letter) {
             result.push(array[i])
         }
     }
-
     return result
 }
 
