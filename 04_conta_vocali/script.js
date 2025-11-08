@@ -12,6 +12,18 @@ function getVowel(string) {
     return vowels
 }
 
+function getVowel(string) {
+    let vowels = 0;
+
+    for (let i = 0; i < string.length; i++) {
+        const char = string.charAt(i).toLowerCase();
+        if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
+            vowels++
+        }
+    }
+    return vowels
+}
+
 // Invoca la funzione qui e stampa il risultato in console
 console.log(getVowel(word))
 
