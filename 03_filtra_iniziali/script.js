@@ -4,9 +4,18 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function filterByInitials(array, letter) {
+    const result = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].charAt(0) === letter) {
+            result.push(array[i])
+        }
+    }
+    return result
+}
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(filterByInitials(names, 'A'))
 
 
 
