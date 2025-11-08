@@ -1,10 +1,10 @@
 /* Scrivi una funzione che accetti un array di nomi e restituisca nuovo un array con le iniziali di ogni parola dell'array fornito */
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
-const initialLetters = [];
 
 // Dichiara la funzione qui.
 function getInitials(array) {
+    const initialLetters = [];
     for (let i = 0; i < array.length; i++) {
         initialLetters.push(array[i].charAt(0));
     }
